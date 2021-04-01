@@ -1,0 +1,39 @@
+.wraper-cart {
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 1px solid #707070;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        height: 3rem;
+    }
+    .cart-count {
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .minus {
+            font-size: 2rem;
+            margin: -6px 23px 0px 15px;
+            cursor: pointer;
+        }
+        
+        .num {
+        }
+        .plus {
+            font-size: 2rem;
+            margin: -6px 23px 0px 15px;
+            cursor: pointer;
+        }
+        
+    }
+    .block-name {
+        width: 10rem;
+    }
+    .block-prise {
+        width: 10rem;
+    }
+    
+}
