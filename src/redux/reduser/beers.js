@@ -60,12 +60,13 @@ export default (state = initState, { type, payload }) => {
             }
         case FAVOURITES_DELETE:
             const del = state.favourites.filter(i => i.id !== payload);
-            const indexId = state.id.findIndex(v => v === payload)
-            state.id.splice(indexId)
+            const resultId = state.id.filter((x) => x !== payload)
+            // const indexId = state.id.findIndex(v => v === payload)
+            // state.id.splice(indexId)
             return {
                 ...state,
                 favourites: [...del],
-                id: [...state.id]
+                id: resultId
             }
       default:
         return state;

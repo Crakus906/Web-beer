@@ -15,7 +15,7 @@ export default function Content() {
         setValue(e);
     }, 500);
     
-    const filterBeer = beersData?.filter((item) => (Object.values(item.name.toLowerCase()).join(' ').includes(value)));
+    const filterBeer = beersData?.filter((item) =>( (item.name).includes(value.toLowerCase())));
     
     return (
         <div className='wraper-content'>
